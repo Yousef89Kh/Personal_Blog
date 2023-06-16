@@ -1,0 +1,183 @@
+/*** Small & Medium Screens ***/
+
+.c-head{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.c-head p{
+    font-size: 0.8em;
+}
+
+.c-info{
+    background-color: #ccc;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+.c-info h2{
+    text-align: center;
+}
+
+.c-info p{
+    font-size: 0.8em;
+}
+
+.c-info p .icon{
+    font-size: 1.3em;
+    margin-right: 20px;
+    background-color: #888;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.c-form{
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+.c-form h2{
+    text-align: center;
+}
+
+.c-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c-form form label{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.c-form form input{
+    width: 70%;
+    height: 40px;
+    font-size: 1em;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+
+}   
+
+.c-form form .email input{
+    margin-left: 15px;
+}
+
+.c-form form .name{
+    margin-bottom: 20px;
+}
+
+.c-form form .email{
+    margin-bottom: 20px;
+}
+
+.c-form form .message{
+    margin-bottom: 20px;
+}
+
+.c-form form .message textarea{
+    margin-top: 20px;
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 10px;
+}
+
+button{
+    background-color: #f79918;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 0.7em;
+    padding: 10px 0;
+    border-radius: 30px;
+    width: 90%;
+}
+    
+button:hover{
+        cursor: pointer;
+        background-color: #888;
+        color: #f79918;
+        font-weight: 800;
+        transition: 0.5s ease;
+}
+
+/*** Large Screens ***/
+
+@media (min-width:901px) {
+    .c-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+        ". h2 ."
+        "phone email location";
+    }
+
+    .c-info h2{
+        grid-area: h2;
+    }
+
+    body > main > section.c-info > p:nth-child(2){
+        grid-area: phone;
+    }
+
+    body > main > section.c-info > p:nth-child(3){
+        grid-area: email;
+    }
+
+    body > main > section.c-info > p:nth-child(4){
+        grid-area: location;
+    }
+
+    .c-info p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .c-info p .icon{
+        width: 50px;
+        height: 40px;
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .c-form .first{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .c-form .first .name{
+        width: 40%;
+    }
+
+    .c-form .first .email{
+        width: 40%;
+    }
+
+    .c-form .message{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .c-form form .message textarea {
+
+        width: 80%;
+    }
+
+    button{
+        width: 20%;
+        margin: auto;
+    }
+}

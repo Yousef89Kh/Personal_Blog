@@ -1,0 +1,97 @@
+/*** Small && Medium Screens ***/
+
+/** Start style main of blog **/
+
+/* author section */
+
+.post-author{
+    margin-top: 20px;
+}
+
+.post-author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-author .author-info .author-img img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+body > main > section.post-author > div > div.author-text{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+/* Content section */
+
+.content h1{
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+}
+
+.content img{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.content p {
+    font-size: 0.7em;
+    font-size: large;
+    color: #888888;
+    text-align: left;
+    padding: 20px;
+}
+
+.content .share .share-icons{
+    display:  flex;
+    flex-direction: row;
+    padding: 10px 40px;
+    list-style-type: none;
+}
+
+.content .share .share-icons a{
+    padding: 15px;
+}
+
+
+
+/* Related section */
+
+.related h1{
+    margin: 30px;
+} 
+/** End style main of blog **/
+
+/*** Large Screens ***/
+
+@media (min-width:901px) {
+
+    .content h1{
+        font-size: 1em;
+    }
+    
+    .content img{
+        width: 70%;
+        display: flex;
+        margin: auto;
+        border-radius: 5px;
+    }
+    
+    .content p {
+        font-size: 0.8em;
+        text-align: left;
+        width: 70%;
+        margin: auto;
+    }
+
+    .content .share .share-icons{
+        margin-left: 20%;
+}
+}   
