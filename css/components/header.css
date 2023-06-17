@@ -1,0 +1,136 @@
+
+nav h1{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links{
+    list-style-type: none;
+    display: flex;
+}
+
+.social-links li{
+    margin-left: 30px;
+}
+
+.social-links li:first-child {
+    margin-left: 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    color: #333;
+}
+
+a:hover{
+    color: #f79918;
+    
+}
+
+#contact{
+    margin-right: 50px;
+}
+
+#search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    width: 90%;
+    border-radius: 30px;
+    margin: auto;
+}
+
+#search span{
+    color: #ccc;
+    font-size: 0.7em;
+    margin: 5px
+}
+
+#search input{
+    width: 90%;
+    background-color: aliceblue ;
+    border: none;
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+#search input:focus{
+    border: none;
+    outline: none;
+}
+
+
+@media (min-width: 600px) and (max-width:900px) {
+
+    nav{
+        display:flex;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    nav #search{
+        order: 1;
+        width: 30%;
+        margin-left: 10px ;
+    }
+    nav h1{
+        order: 2;
+        width: 50%;
+        font-size: 1.2em !important;
+        margin-left: 10px;
+    }
+    nav .links{
+        order: 3;
+        font-size: 0.7em;
+        margin-left: 10px;
+        padding: 0 !important;
+    }
+    
+    #contact{
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (min-width:901px) {
+
+    nav{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        margin: 0 20px;
+    }
+
+    nav h1{
+        order: 1;
+    }
+
+    nav .links {
+        order: 3;
+        font-size: 0.8em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .links .social-links{
+        margin-right: 100px;
+    }
+
+    nav #search{
+        order: 2;
+        width: 40%;
+    }
+
+
+}

@@ -1,0 +1,94 @@
+/*** Anything smaller than first breakpoint 600px ***/
+
+/* Posts section */
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: 15px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.post .thumbnail img{
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.post .contant .date{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.post .contant h2{
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.post .contant p{
+    font-size: 0.7em;
+}
+
+.author a{
+    display: flex;
+    align-items: center;
+}
+
+.contant .author .author-img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contant .author .author-text{
+    font-size: 0.7em;
+}
+
+.contant .author .author-text span{
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+
+/*** Medium Screens ***/
+
+@media (min-width: 600px) and (max-width:900px) {
+
+    .post .thumbnail img{
+        width: 100%;
+        height: 40%;
+    }
+}
+
+/*** Large Screens ***/
+
+@media (min-width:901px) {
+
+    .posts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 20px;
+    }
+
+    .post .thumbnail img{
+        min-width: 80%;
+        height: 90%;
+    }
+
+    .post .contant{
+        margin-top: -20px;
+    }
+
+    .post .contant h2 {
+        width: 90%;
+    }
+
+    .post .contant p {
+        width: 90%;
+    }
+
+}   
+
