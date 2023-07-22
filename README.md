@@ -24,11 +24,11 @@ This is a personal blog project that showcases articles and posts on various top
 
 To use this personal blog project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/YousefKullab/Personal_Blog.git`
-2. Open the project directory: `cd Personal-Blog`
-3. Customize the CSS files in the `css/` directory to match your desired design.
-4. Modify the HTML files (`index.html` and `post.html`) to add your own content and blog posts.
-5. Open `index.html` in a web browser to view your personal blog.
+	- Clone the repository: `git clone https://github.com/YousefKullab/Personal_Blog.git`
+	- Open the project directory: `cd Personal-Blog`
+	- Customize the CSS files in the `css/` directory to match your desired design.
+	- Modify the HTML files (`index.html` and `post.html`) to add your own content and blog posts.
+	- Open `index.html` in a web browser to view your personal blog.
 
 Feel free to explore and modify the code to suit your needs. Happy blogging!
 
