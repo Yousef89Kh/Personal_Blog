@@ -24,8 +24,8 @@ This is a personal blog project that showcases articles and posts on various top
 
 To use this personal blog project, follow these steps:
 
-- Clone the repository: `git clone https://github.com/YousefKullab/Personal_Blog.git`
-- Open the project directory: `cd Personal-Blog`
+- Clone the repository: `git clone https://github.com/yousefkullab/personal-blog.git`
+- Open the project directory: `cd personal-blog`
 - Customize the CSS files in the `css/` directory to match your desired design.
 - Modify the HTML files (`index.html` and `post.html`) to add your own content and blog posts.
 - Open `index.html` in a web browser to view your personal blog.
